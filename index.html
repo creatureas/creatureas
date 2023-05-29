@@ -4,6 +4,7 @@
 <head>
 	<title>creatureas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://web3forms.com/client/script.js" async defer></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
@@ -31,11 +32,11 @@ function sendMail() {
 	<section id="intro">
 		<div id="intro-text">
 			
-           <img src="images/logo-11.png" width="600" height="550">
-
+            <img src="images/logo-11.png" width="400" height="95">
+			
 			<div href="#about" id="scr-down">
             
-			  <h2>Get your project here ..</h2>
+			  <h2>Scroll down for more</h2>
 				<a href="#about">
 					<img src="images/scr_down.png">
 				</a> 
@@ -125,10 +126,13 @@ we take a collaborative approach to every project, ensuring that we fully unders
 	           	<h3>Let's start a project</h3>
 	           	<p>Contact us today to learn more about our web design and development services and how we can help your business succeed online.</p>
 	           	<hr>
-			  	<form id="cont-form" action="mail.php" method="POST">
+			  	<form id="cont-form" action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="a6f2c5d1-35bd-4b86-8213-26b467caa80f">
+					<input type="hidden" name="redirect" value="https://web3forms.com/success">
+  					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 	              <input type="text" name="name" id="name" placeholder="Name" required><span>*</span><br>
 	              <input type="text" spellcheck='false' name="email"  id="email" placeholder="Email Address" ><span>*</span><br>
-	              <input type="text" name="phone" id="phone" placeholder="Phone Number" required><span style="color:#fff">*</span><br>
+	              <input type="text" name="phone" id="phone" placeholder="Phone Number" required><span>*</span><br>
 	              <textarea name="comments" placeholder="Tell us a little about your project" required></textarea><span style="margin-top:12px;">*</span><br>
 	             <button onclick="sendMail(); return false" type="submit" name="send-btn" id="send-btn" value="submit">Send</button>
                   <!--<a href="#" name="send-btn" id="send-btn">Send</a>-->
