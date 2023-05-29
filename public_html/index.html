@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+	
+<html>
+<head>
+	<title>creatureas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://web3forms.com/client/script.js" async defer></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <script src="js/pace.js"></script>
+	<script src=
+    "https://smtpjs.com/v3/smtp.js"></script> 
+	<script>
+function sendMail() {
+    var link = "mailto:mailcreatureas@gmail.com"
+             + "?cc=mailcreatureas@gmail.com"
+             + "&subject=" + encodeURIComponent("Creatureas Contact Form")
+             + "&body=" + encodeURIComponent(document.getElementById('name').value) 
+			 + encodeURIComponent(document.getElementById('email').value)
+			 + encodeURIComponent(document.getElementById('phone').value)
+			 encodeURIComponent(document.getElementById('comments').value);
+    
+    window.location.href = link;
+}
+
+	</script>
+</head>
+<body>
+	<div id="vid-overlay"></div>
+	<!-- Intro -->
+	<section id="intro">
+		<div id="intro-text">
+			
+            <img src="images/logo-11.png" width="400" height="95">
+	
+			<div href="#about" id="scr-down" style="display: block;">
+            
+			  <h2>Scroll down for more</h2>
+				<a href="#about">
+					<img src="images/scr_down.png">
+				</a> 
+			</div>
+	  </div>
+	</section>
+	<!-- About -->
+	<section id="about">
+		<article>
+			<h5>About</h5>
+			<h1><span>
+				We develop applications that could carry your business to the digital platform.
+Creatureas, elevate the vision to enhance businesses through improved process and optimized by implementation of technology.
+We offer comprehensive web design and development services that are tailored to meet the unique needs of your business. Our team of experienced designers and developers work closely with you to create a website that not only looks great but also functions seamlessly.
+We focus on creating a user-friendly experience for your visitors, ensuring that your website is easy to navigate and optimized for conversions.
+we take a collaborative approach to every project, ensuring that we fully understand your business and your goals before we begin. Whether you're looking to launch a new website or redesign an existing one, we are here to help you achieve your online objectives. 
+</span><em></em></h1>
+		</article>
+	</section>
+	<!-- Services -->
+	<section id="services">
+		<h2>Services <span>that we offer</span></h2>
+		<article>
+			<div id="php">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Web Development</h5>
+			</div>
+			<div id="wp">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Web Applications</h5>
+			</div>
+			<div id="ps">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Logo Design</h5>
+			</div>
+			<div id="droid">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Business Process</h5>
+			</div>
+			<div id="ios">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Digital Solutions</h5>
+			</div>
+			<div id="soc">
+				<!--<img src="images/php-dev.png">-->
+				<h5>Consultant</h5>
+			</div>
+		</article>
+	</section>
+	<!-- Process -->
+	<section id="about">
+		<h5> This help your Business ?</h5>
+		<article>
+			<h1><span>
+				It’s straight-up, hassle-free for you! No more endless online searches for individual or group contractors for your varied online business needs.
+<br>
+<br>
+
+				we have the entire package ready and waiting for you with a bow on top! With us, you have a full roster of professionals working tirelessly to meet your business needs, for the price that’s not only affordable but also specific only to the services that you require, with no binding and needless contracts.	
+			</span><em></em></h1>
+
+			<!--<span id="ideate">
+				<img src="images/ideate.png">
+				<h5>Ideate</h5>
+			</span>
+			<span id="photoshop">
+				<img src="images/psd.png">
+				<h5>Photoshop</h5>
+			</span>
+			<span id="code">
+				<img src="images/code.png">
+				<h5>Code</h5>
+			</span>
+			<span id="optimize">
+				<img src="images/optimize.png">
+				<h5>Optimize</h5>
+			</span>-->
+			
+		</article>
+	</section>
+	<!-- Contact -->
+	<section id="contact">
+		<article>
+	          	<div id="contact_form">
+
+
+	           	<h3>Let's start a project</h3>
+	           	<p>Contact us today to learn more about our web design and development services and how we can help your business succeed online.</p>
+	           	<hr>
+			  	<form id="cont-form" action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="a6f2c5d1-35bd-4b86-8213-26b467caa80f">
+					<input type="hidden" name="redirect" value="https://web3forms.com/success">
+  					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+	              <input type="text" name="name" id="name" placeholder="Name" required><span>*</span><br>
+	              <input type="text" spellcheck='false' name="email"  id="email" placeholder="Email Address" ><span>*</span><br>
+	              <input type="text" name="phone" id="phone" placeholder="Phone Number" required><span style="color:#fff">*</span><br>
+	              <textarea name="comments" placeholder="Tell us a little about your project" required></textarea><span style="margin-top:12px;">*</span><br>
+	             <button onclick="sendMail(); return false" type="submit" name="send-btn" id="send-btn" value="submit">Send</button>
+                  <!--<a href="#" name="send-btn" id="send-btn">Send</a>-->
+	              <div class="clr"></div>
+			    </form>
+			</div>
+			<div id="address">
+				<p>or you can send an email.</p>
+				<span>Mail<b color="#6381E2">creatureas</b>@gmail.com</span>
+			</div>
+		</article>
+		
+		
+</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/device.min.js"></script>
+	<script src="js/jquery.wordrotator.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+  	<script src="js/TweenMax.min.js"></script>
+  	<script src="js/jquery.superscrollorama.js"></script>
+	<script src="js/jquery.diamonds.js"></script>
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+	<script src="js/scripts.js"></script> <!-- Edit this -->
+	
+</body>
+</html>
