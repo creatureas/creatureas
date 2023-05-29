@@ -11,11 +11,11 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $comments = $_POST['comments'];
 $formcontent="From: $name \n Message: $comments" \n Email: $email \n Phone $phone;
-$recipient = "contactthemnz@gmail.com";
+$recipient = "mailcreatureas@gmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-header('Location: http://creatureas.000webhostapp.com/creatureas/v5/index.html');
+header('Location: https://github.com/creatureas/creatureas');
 ?>
 
 </body>
