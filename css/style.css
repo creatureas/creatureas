@@ -546,6 +546,14 @@ section {
 #address>p {
     padding: 9.6em 0 1em;
 }
+footer {
+    background-color: rgba(1, 35, 51, 0.5);
+    color: #fff;
+    padding: 7px;
+    font: 300 15px 'open sans', sans-serif;
+    text-align: center;
+    
+  }
 #cont-form {
     padding-top: 2em;
     position: relative;
