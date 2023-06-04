@@ -9,22 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
     <script src="js/pace.js"></script>
-	<script src=
-    "https://smtpjs.com/v3/smtp.js"></script> 
-	<script>
-function sendMail() {
-    var link = "mailto:mailcreatureas@gmail.com"
-             + "?cc=mailcreatureas@gmail.com"
-             + "&subject=" + encodeURIComponent("Creatureas Contact Form")
-             + "&body=" + encodeURIComponent(document.getElementById('name').value) 
-			 + encodeURIComponent(document.getElementById('email').value)
-			 + encodeURIComponent(document.getElementById('phone').value)
-			 encodeURIComponent(document.getElementById('comments').value);
-    
-    window.location.href = link;
-}
-
-	</script>
 </head>
 <body>
 	<div id="vid-overlay"></div>
@@ -129,7 +113,7 @@ we take a collaborative approach to every project, ensuring that we fully unders
 			  	<form id="cont-form" action="https://api.web3forms.com/submit" method="POST">
 					<input type="hidden" name="access_key" value="a6f2c5d1-35bd-4b86-8213-26b467caa80f">
 					<input type="hidden" name="redirect" value="https://creatureas.github.io/creatureas/success.html">
-  					
+  				
 	              <input type="text" name="name" id="name" placeholder="Name" required><span>*</span><br>
 	              <input type="text" spellcheck='false' name="email"  id="email" placeholder="Email Address" ><span>*</span><br>
 	              <input type="text" name="phone" id="phone" placeholder="Phone Number" required><span style="color:#fff">*</span><br>
@@ -146,6 +130,12 @@ we take a collaborative approach to every project, ensuring that we fully unders
 		</article>
 		
 		
+</section>
+<section>
+	  <footer>
+    <p>&copy; 2023 Creatureas</p>
+  </footer>
+	</section>
 </section>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	
